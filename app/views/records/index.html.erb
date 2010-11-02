@@ -1,0 +1,7 @@
+<h1>All Records</h1>
+
+<p><%= link_to 'New record', new_record_path %></p>
+
+<% @records.each do |key, value| %>
+  <p><%= key %>: <%= value %></p>
+<% end %>

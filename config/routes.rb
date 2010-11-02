@@ -1,4 +1,7 @@
 TokyocabinetRails::Application.routes.draw do
+  
+  resources :records
+  root :to => "records#index"
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
